@@ -1,7 +1,8 @@
 # MySQL-Many-to-Many-Relationships
 
 Our example for this section will be a TV Show Reviewing Application. It will be comprised of Users who sign up to review as well as their reviews and a selection of TV shows. 
-	• This is a many to many relationship because one Reviewer can leave a review on many TV shows, and a single TV show can be reviewed by many different reviewers!
+
+• This is a many to many relationship because one Reviewer can leave a review on many TV shows, and a single TV show can be reviewed by many different reviewers!
 
 3 Tables Necessary
 
