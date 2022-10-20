@@ -12,6 +12,22 @@ CREATE TABLE series(
     title VARCHAR(100),
     released_year YEAR(4),
     genre VARCHAR(100)
+);
+
+
+
+-- Reviewers Table
+
+--      ID: Primary Key
+--      First_name
+--      Last_name
+
+CREATE TABLE reviewers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100)
+);
+
 
 
 -- Reviews Table
@@ -28,23 +44,11 @@ CREATE TABLE reviews (
     reviewer_id INT,
     FOREIGN KEY(series_id) REFERENCES series(id),
     FOREIGN KEY(reviewer_id) REFERENCES reviewers(id)
-
-
--- Reviewers Table
-
--- 		ID: Primary Key
--- 		First_name
--- 		Last_name
-
-CREATE TABLE reviewers (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(100),
-    last_name VARCHAR(100)
 );
 
 
 
--- DATA INSERT FOR TABLES!
+-- BULK DATA INSERT FOR TABLES!
 
 INSERT INTO series (title, released_year, genre) VALUES
     ('Archer', 2009, 'Animation'),
